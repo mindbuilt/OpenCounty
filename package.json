@@ -1,0 +1,16 @@
+{
+  "name": "opencounty-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Open County static site (home and growth pages)",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/input.css -o css/site.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i src/input.css -o css/site.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "@formspree/ajax": "^1.1.5"
+  }
+}

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Site-wide: square corners and no shadows, matching the brand. */
+* { border-radius: 0px !important; box-shadow: none !important; }
+
+body {
+  background-color: #FFFFFF;
+  color: #1E2022;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Formspree status and error elements stay hidden until the library marks them active. */
+[data-fs-error], [data-fs-success] { display: none; }
+[data-fs-error][data-fs-active], [data-fs-success][data-fs-active] { display: block; }
